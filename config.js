@@ -25,15 +25,16 @@ window.SITE = {
   formEndpoint: "https://formspree.io/f/xeaapvzk",
 
   // GOOGLE ADS (laisser vide tant que le suivi n'est pas prévu)
-  gtagId: "",                 // identifiant de la balise Google, par exemple "AW-123456789"
-  conversionLabel: "",        // libellé de la conversion « formulaire envoyé », par exemple "AbCdEfGhIj"
+  gtagId: "AW-11467076247",                 // identifiant de la balise Google, par exemple "AW-123456789"
+  conversionLabel: "Fqt6CIG5_LAdEJfl9tsq",        // libellé de la conversion « formulaire envoyé », par exemple "AbCdEfGhIj"
   callLabel: "",              // libellé de la conversion « clic sur le téléphone » (facultatif)
   chargerAvantConsentement: false, // false = rien n'est chargé tant que le visiteur n'a pas accepté
 
   // MENTIONS LÉGALES ET CONFIDENTIALITÉ : à compléter
   raison: "DIAGALIS",
   forme: "EURL au capital de 1000 euros",
-  siret: "Numéro SIRET  890 486 962 00016",
+  siret: "890 486 962 00016",
+  certification: "",
   assurance: "GAN",
-  directeur: "Responsable de la publication"
+  directeur: ""
 };
