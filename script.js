@@ -164,3 +164,30 @@
     $('ville').focus();
   });
 })();
+
+/* Saisie semi-automatique de la ville (API publique geo.api.gouv.fr) */
+(function () {
+  var v = document.getElementById('ville');
+  if (!v || !window.fetch) return;
+  var dl = document.createElement('datalist'); dl.id = 'villes';
+  v.setAttribute('list', 'villes'); v.parentNode.appendChild(dl);
+  var t, last = '';
+  v.addEventListener('input', function () {
+    clearTimeout(t);
+    var q = v.value.trim();
+    if (q.length < 3 || q === last || /\(\d{5}\)$/.test(q)) return;
+    t = setTimeout(function () {
+      last = q;
+      fetch('https://geo.api.gouv.fr/communes?nom=' + encodeURIComponent(q) + '&fields=nom,codesPostaux&boost=population&limit=8')
+        .then(function (r) { return r.json(); })
+        .then(function (a) {
+          dl.innerHTML = '';
+          a.forEach(function (c) {
+            var o = document.createElement('option');
+            o.value = c.nom + ' (' + ((c.codesPostaux || [])[0] || '') + ')';
+            dl.appendChild(o);
+          });
+        }).catch(function () {});
+    }, 250);
+  });
+})();
