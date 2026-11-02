@@ -9,7 +9,7 @@ window.SITE = {
   telLien: "+33179727010",     // numéro du bouton d'appel, format international sans espaces
   horaires: "Lun-Ven 9h-19h, Sam 9h-12h",
   adresse: "11 rue Albert Einstein, 77420 Champs-sur-Marne",
-  email: "À compléter : adresse e-mail",
+  email: "contact@diagalis.fr",
   delaiRapport: "48 h",
 
   // Remise affichée en pastille. Laissez "" pour la retirer.
@@ -31,10 +31,9 @@ window.SITE = {
   chargerAvantConsentement: false, // false = rien n'est chargé tant que le visiteur n'a pas accepté
 
   // MENTIONS LÉGALES ET CONFIDENTIALITÉ : à compléter
-  raison: "À compléter : raison sociale",
-  forme: "À compléter : forme juridique et capital",
-  siret: "À compléter : numéro SIRET",
-  certification: "À compléter : organisme de certification des diagnostiqueurs et numéro",
-  assurance: "À compléter : assurance responsabilité civile professionnelle (compagnie, n° de contrat)",
-  directeur: "À compléter : responsable de la publication"
+  raison: "DIAGALIS",
+  forme: "EURL au capital de 1000 euros",
+  siret: "Numéro SIRET  890 486 962 00016",
+  assurance: "GAN",
+  directeur: "Responsable de la publication"
 };
