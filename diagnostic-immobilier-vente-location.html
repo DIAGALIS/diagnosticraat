@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Diagnostics immobiliers vente et location : devis gratuit | DIAGALIS</title>
+<meta name="description" content="Tous les diagnostics immobiliers pour vendre ou louer : DPE, amiante, plomb, électricité, gaz, termites, état des risques. Devis gratuit.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-lp="diagnostics-immobiliers">
+<header class="topbar"><div class="wrap top"><a class="logo" href="diagnostic-amiante-travaux.html" aria-label="DIAGALIS Prévention BTP"><img class="logo-img" src="logo-diagalis.png" width="625" height="146" alt="DIAGALIS Prévention BTP"></a><p class="slogan">Votre partenaire spécialiste dans le repérage des polluants de chantiers</p><div class="callbox"><small>Appel gratuit<br><span data-site="horaires">Lun-Ven 9h-19h, Sam 9h-12h</span></small><a class="btn" href="tel:+33179727010" data-tel-href>&#9742;&nbsp;<span data-site="tel">01 79 72 70 10</span></a></div></div></header>
+<main>
+<div class="wrap lp">
+<div class="lp-hero">
+      <p class="eyebrow"><img class="picto" src="pictogramme-immo.png" width="192" height="192" alt="" aria-hidden="true"><span>Diagnostics immobiliers</span></p>
+      <h1>Vendre ou louer : <span class="hl">tous vos diagnostics immobiliers, en une demande.</span></h1>
+      <p class="lede">DPE, amiante, plomb, électricité, gaz, termites, état des risques : les diagnostics à fournir dépendent de votre bien et de votre projet. Votre conseiller vous indique lesquels sont nécessaires et vous établit un devis.</p>
+      <p class="promo" data-if="promo"><span data-site="promo"></span></p>
+      <ul class="checks"><li><span>Devis gratuit en 2 clics, un conseiller vous rappelle</span></li><li><span>Les diagnostics exigés pour votre bien, sans oubli</span></li><li><span>Pour les particuliers et les professionnels de l'immobilier</span></li></ul>
+      <p class="hero-call">Plutôt par téléphone ? <a class="" href="tel:+33179727010" data-tel-href><span data-site="tel">01 79 72 70 10</span></a> <span>Appel gratuit</span></p>
+      <ul class="proofs"><li>Diagnostiqueurs certifiés</li><li>Devis gratuit</li><li>Sans engagement</li></ul>
+    </div>
+<aside class="lp-form" aria-label="Demande de devis"><section class="formcard" id="devis" aria-labelledby="t-devis">
+      <div id="form-intro">
+        <h2 class="form-title" id="t-devis">Devis gratuit : diagnostics immobiliers</h2>
+        <p class="form-sub">2 clics, un conseiller vous rappelle.</p>
+      </div>
+      <form id="devis-form" aria-labelledby="t-devis">
+        <fieldset>
+          <legend class="legend" style="margin-bottom:6px">Vous êtes</legend>
+          <div class="seg">
+            <label><input type="radio" name="profil" value="Particulier" required><span>Particulier</span></label>
+            <label><input type="radio" name="profil" value="Professionnel" required><span>Professionnel</span></label>
+          </div>
+        </fieldset>
+        <div class="field"><label for="projet">Votre projet</label><select class="ctl" id="projet" name="projet" required><option value="" disabled selected>Choisir</option><option>Vente d'un bien</option><option>Location d'un bien</option><option>Autre demande</option></select></div>
+        <div class="field"><label for="bien">Typologie du bien</label><select class="ctl" id="bien" name="bien" required><option value="" disabled selected>Choisir</option><option>Maison</option><option>Appartement</option><option>Immeuble</option><option>Local professionnel</option><option>Autre bien</option></select></div>
+        <div class="field"><label for="ville">Ville du bien</label><input class="ctl" type="text" id="ville" name="ville" required autocomplete="address-level2" placeholder="Ville du bien"></div>
+        <div class="field"><label for="nom">Nom</label><input class="ctl" type="text" id="nom" name="nom" required autocomplete="name" placeholder="Prénom Nom"></div>
+        <div class="field"><label for="tel">Téléphone</label><input class="ctl" type="tel" id="tel" name="tel" required autocomplete="tel" inputmode="tel" pattern="[0-9 .+()\-]{8,20}" title="Numéro de téléphone, par exemple 06 12 34 56 78" placeholder="06 12 34 56 78"></div>
+        <div class="hp" aria-hidden="true"><label for="website">Ne pas remplir ce champ</label><input id="website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+        <p class="form-error" id="err" role="alert" hidden></p>
+        <button class="btn btn-block" type="submit">Recevoir mon devis gratuit</button>
+        <p class="fine">DIAGALIS utilise ces informations pour vous rappeler et établir votre devis. <a href="confidentialite.html">Politique de confidentialité</a></p>
+      </form>
+      <div class="recap" id="recap" tabindex="-1" hidden>
+        <h2 class="form-title">Votre demande</h2>
+        <dl id="recap-list"></dl>
+        <p class="demo-note"><strong>Démonstration.</strong> Cette demande n'a été transmise à personne. Pour recevoir de vraies demandes, renseignez <code>formEndpoint</code> dans <code>config.js</code>.</p>
+        <button class="btn btn-ghost" type="button" id="edit">Modifier ma demande</button>
+      </div>
+    </section></aside>
+<div class="lp-rest">
+<section class="blk" id="concerne"><h2 class="title">Vente ou location : quels diagnostics ?</h2><p class="sub">La colonne de gauche indique quand chaque diagnostic s'applique à votre bien.</p><div class="tablewrap"><table class="diag"><thead><tr><th scope="col">Diagnostic</th><th scope="col">Vente</th><th scope="col">Location</th></tr></thead><tbody><tr><th scope="row">DPE<small>Tous les logements</small></th><td class="ok">Oui</td><td class="ok">Oui</td></tr><tr><th scope="row">Amiante<small>Permis de construire d'avant le 1er juillet 1997</small></th><td class="ok">Oui</td><td class="mid">À tenir à disposition</td></tr><tr><th scope="row">Plomb (CREP)<small>Logement construit avant le 1er janvier 1949</small></th><td class="ok">Oui</td><td class="ok">Oui</td></tr><tr><th scope="row">Électricité<small>Installation de plus de 15 ans</small></th><td class="ok">Oui</td><td class="ok">Oui</td></tr><tr><th scope="row">Gaz<small>Installation de plus de 15 ans</small></th><td class="ok">Oui</td><td class="ok">Oui</td></tr><tr><th scope="row">Termites<small>Zones fixées par arrêté préfectoral</small></th><td class="ok">Oui</td><td class="no">Non</td></tr><tr><th scope="row">État des risques<small>Zones à risques (naturels, miniers, technologiques, sismicité, radon)</small></th><td class="ok">Oui</td><td class="ok">Oui</td></tr><tr><th scope="row">Audit énergétique<small>Maison ou immeuble entier mis en vente, classé E, F ou G</small></th><td class="ok">Oui</td><td class="no">Non</td></tr><tr><th scope="row">Surface<small>Vente d'un lot en copropriété ; location vide en résidence principale</small></th><td class="mid">Loi Carrez</td><td class="mid">Surface habitable</td></tr></tbody></table></div><p class="note">Selon le bien, d'autres diagnostics peuvent s'ajouter : assainissement non collectif, bruit près d'un aéroport. Pas sûr de ce qui concerne votre bien ? Votre conseiller établit la liste exacte lors du rappel gratuit.</p><p><a class="btn" href="#devis">Recevoir mon devis gratuit</a></p></section>
+<section class="blk"><h2 class="title">Comment votre dossier est constitué</h2><p class="sub">Le dossier de diagnostic technique, de A à Z.</p><ol class="steps"><li>Votre conseiller identifie les diagnostics exigés pour votre bien et votre projet</li><li>Un diagnostiqueur certifié les réalise lors de la visite du bien</li><li>Les rapports sont regroupés dans un dossier de diagnostic technique</li><li>Le dossier est annexé à la promesse ou à l'acte de vente, ou au bail</li></ol><p class="note">La liste est plus longue pour une vente que pour une location.</p></section>
+<section class="blk"><h2 class="title">Pourquoi ne pas s'en passer</h2><p class="sub">Des diagnostics complets sécurisent votre vente ou votre location.</p><div class="risks"><div><h3>Pour votre vente</h3><p>Un vendeur qui ne fournit pas les diagnostics obligatoires ne peut pas s'exonérer de la garantie des vices cachés, et l'acquéreur peut se retourner contre lui.</p></div><div><h3>Pour votre location</h3><p>Le dossier de diagnostic technique est annexé au bail. Certains logements énergivores ne pourront plus être loués selon un calendrier prévu par la loi.</p></div><div><h3>Pour votre calendrier</h3><p>Des diagnostics demandés au dernier moment peuvent retarder la signature. Anticiper évite les mauvaises surprises.</p></div></div></section>
+<section class="blk"><h2 class="title">Ce que vous obtenez avec DIAGALIS</h2><ul class="benefits"><li><b>Un devis gratuit en 2 clics</b><span>Remplissez le formulaire, un conseiller vous rappelle.</span></li><li><b>Des diagnostiqueurs certifiés</b><span>Chaque diagnostic est réalisé par un opérateur certifié.</span></li><li><b>La bonne liste de diagnostics</b><span>Votre conseiller vous indique ceux qui sont exigés pour votre bien.</span></li></ul></section>
+<section class="blk"><h2 class="title">Combien coûtent les diagnostics ?</h2><div class="pricebox"><p>Le prix dépend de la nature du bien (surface, nombre de pièces, âge du bâtiment) et de la liste de diagnostics exigés. Le devis est gratuit et précise le prix avant toute intervention.</p><a class="btn" href="#devis">Recevoir mon devis gratuit</a></div></section>
+<section class="blk"><h2 class="title">Comment ça se passe</h2><p class="sub">Cinq étapes, de la demande aux rapports.</p><ol class="steps vert"><li>Remplissez le formulaire</li><li>Un conseiller vous contacte et établit la liste des diagnostics</li><li>Vous recevez votre devis gratuit</li><li>Un diagnostiqueur certifié visite le bien</li><li>Vous recevez votre dossier de diagnostic technique</li></ol></section>
+<section class="blk"><h2 class="title">Questions fréquentes</h2><div class="faq"><details><summary>Quels diagnostics faut-il pour vendre un bien ?</summary><p>Selon le bien : DPE, amiante (permis d'avant le 1er juillet 1997), plomb (avant 1949), électricité et gaz (installations de plus de 15 ans), termites (zones concernées), état des risques, et selon les cas assainissement non collectif ou mesurage loi Carrez. Votre conseiller établit la liste exacte.</p></details><details><summary>Quels diagnostics faut-il pour louer un bien ?</summary><p>Le DPE et l'état des risques, puis selon le bien : plomb (avant 1949), électricité et gaz (installations de plus de 15 ans), bruit près d'un aéroport. L'amiante est à tenir à disposition pour un bien d'avant le 1er juillet 1997. Pour une location vide en résidence principale, la surface habitable est indiquée au bail.</p></details><details><summary>Quelle est la durée de validité des diagnostics ?</summary><p>Elle varie : le DPE est valable 10 ans, l'état des risques moins de 6 mois à la signature, l'électricité et le gaz 3 ans pour une vente et 6 ans pour une location. Le plomb et l'amiante peuvent être illimités en l'absence de produit repéré. Votre conseiller vous précise les échéances.</p></details><details><summary>Qui paie les diagnostics ?</summary><p>Le propriétaire, qu'il vende ou qu'il loue.</p></details><details><summary>Le DPE peut-il empêcher de louer ?</summary><p>Oui, progressivement : la loi interdit de louer les logements les plus énergivores selon un calendrier (logements classés G depuis 2025, F à partir de 2028, E à partir de 2034).</p></details><details><summary>Quel est le délai pour recevoir les rapports ?</summary><p>Il dépend des diagnostics demandés et des éventuelles analyses en laboratoire. Le délai est annoncé dans votre devis gratuit.</p></details></div></section>
+</div>
+</div>
+</main>
+<div class="ctaband"><div class="wrap cta-in"><div><h2>Préparez votre vente ou votre location</h2><p>Devis gratuit, sans engagement. Un conseiller vous rappelle. Appel gratuit, <span data-site="horaires">Lun-Ven 9h-19h, Sam 9h-12h</span>.</p></div><div class="cta-btns"><a class="btn" href="#devis">Demander mon devis gratuit</a><a class="btn btn-ghost" href="tel:+33179727010" data-tel-href>&#9742;&nbsp;<span data-site="tel">01 79 72 70 10</span></a></div></div></div>
+<footer class="footer"><div class="wrap foot"><address><strong>DIAGALIS</strong><span data-site="horaires">Lun-Ven 9h-19h, Sam 9h-12h</span><a class="" href="tel:+33179727010" data-tel-href><span data-site="tel">01 79 72 70 10</span></a></address><ul><li><a href="mentions-legales.html">Mentions légales</a></li><li><a href="confidentialite.html">Politique de confidentialité</a></li><li><button class="linklike" type="button" data-cookie-settings hidden>Gérer les cookies</button></li><li><a href="https://www.diagalis.fr/">Site DIAGALIS</a></li></ul></div></footer>
+<div class="callbar"><a class="btn btn-ghost" href="tel:+33179727010" data-tel-href>&#9742;&nbsp;<span data-site="tel">01 79 72 70 10</span></a><a class="btn" href="#devis">Devis gratuit</a></div>
+<div class="consent" id="consent" role="dialog" aria-labelledby="consent-t" hidden>
+  <div class="consent-in">
+    <p id="consent-t">Nous utilisons des cookies de mesure publicitaire (Google Ads) pour évaluer l'efficacité de nos annonces. Vous pouvez les accepter ou les refuser. <a href="confidentialite.html">En savoir plus</a></p>
+    <div class="consent-btns"><button class="btn" type="button" id="consent-refuse">Refuser</button><button class="btn accept" type="button" id="consent-accept">Accepter</button></div>
+  </div>
+</div>
+<script src="config.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
