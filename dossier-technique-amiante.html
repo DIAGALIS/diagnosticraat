@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dossier technique amiante (DTA) : devis gratuit | DIAGALIS</title>
+<meta name="description" content="Constitution et mise à jour du dossier technique amiante (DTA) pour immeubles collectifs, bureaux et locaux professionnels. Devis gratuit.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-lp="amiante-dta">
+<header class="topbar"><div class="wrap top"><a class="logo" href="diagnostic-amiante-travaux.html" aria-label="DIAGALIS Prévention BTP"><img class="logo-img" src="logo-diagalis.png" width="625" height="146" alt="DIAGALIS Prévention BTP"></a><p class="slogan">Votre partenaire spécialiste dans le repérage des polluants de chantiers</p><div class="callbox"><small>Appel gratuit<br><span data-site="horaires">Lun-Ven 9h-19h, Sam 9h-12h</span></small><a class="btn" href="tel:+33179727010" data-tel-href>&#9742;&nbsp;<span data-site="tel">01 79 72 70 10</span></a></div></div></header>
+<main>
+<div class="wrap lp">
+<div class="lp-hero">
+      <p class="eyebrow"><img class="picto" src="pictogramme-amiante.png" width="160" height="157" alt="" aria-hidden="true"><span>Dossier technique amiante (DTA)</span></p>
+      <h1>Dossier technique amiante : <span class="hl">constituez et mettez à jour votre dossier.</span></h1>
+      <p class="lede">Les propriétaires d'immeubles collectifs, de bureaux et de locaux professionnels dont le permis de construire date d'avant le 1er juillet 1997 doivent tenir un DTA. Un opérateur certifié repère l'amiante et constitue votre dossier.</p>
+      <p class="promo" data-if="promo"><span data-site="promo"></span></p>
+      <ul class="checks"><li><span>Devis gratuit en 2 clics, un conseiller vous rappelle</span></li><li><span>Dossier et fiche récapitulative prêts à communiquer</span></li><li><span>Pour les propriétaires, syndics et gestionnaires</span></li></ul>
+      <p class="hero-call">Plutôt par téléphone ? <a class="" href="tel:+33179727010" data-tel-href><span data-site="tel">01 79 72 70 10</span></a> <span>Appel gratuit</span></p>
+      <ul class="proofs"><li>Experts certifiés</li><li>Devis gratuit</li><li>Sans engagement</li></ul>
+    </div>
+<aside class="lp-form" aria-label="Demande de devis"><section class="formcard" id="devis" aria-labelledby="t-devis">
+      <div id="form-intro">
+        <h2 class="form-title" id="t-devis">Devis gratuit : dossier technique amiante</h2>
+        <p class="form-sub">2 clics, un conseiller vous rappelle.</p>
+      </div>
+      <form id="devis-form" aria-labelledby="t-devis">
+        <fieldset>
+          <legend class="legend" style="margin-bottom:6px">Vous êtes</legend>
+          <div class="seg">
+            <label><input type="radio" name="profil" value="Particulier" required><span>Particulier</span></label>
+            <label><input type="radio" name="profil" value="Professionnel" required><span>Professionnel</span></label>
+          </div>
+        </fieldset>
+        <div class="field"><label for="projet">Votre besoin</label><select class="ctl" id="projet" name="projet" required><option value="" disabled selected>Choisir</option><option>Constitution du DTA</option><option>Mise à jour du DTA</option><option>DTA manquant ou incomplet</option><option>Autre demande</option></select></div>
+        <div class="field"><label for="bien">Typologie du bien</label><select class="ctl" id="bien" name="bien" required><option value="" disabled selected>Choisir</option><option>Immeuble d'habitation (copropriété)</option><option>Immeuble de bureaux</option><option>Local commercial</option><option>Bâtiment industriel ou agricole</option><option>Autre bâtiment</option></select></div>
+        <div class="field"><label for="ville">Ville du bâtiment</label><input class="ctl" type="text" id="ville" name="ville" required autocomplete="address-level2" placeholder="Ville du bâtiment"></div>
+        <div class="field"><label for="nom">Nom</label><input class="ctl" type="text" id="nom" name="nom" required autocomplete="name" placeholder="Prénom Nom"></div>
+        <div class="field"><label for="tel">Téléphone</label><input class="ctl" type="tel" id="tel" name="tel" required autocomplete="tel" inputmode="tel" pattern="[0-9 .+()\-]{8,20}" title="Numéro de téléphone, par exemple 06 12 34 56 78" placeholder="06 12 34 56 78"></div>
+        <div class="hp" aria-hidden="true"><label for="website">Ne pas remplir ce champ</label><input id="website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+        <p class="form-error" id="err" role="alert" hidden></p>
+        <button class="btn btn-block" type="submit">Recevoir mon devis gratuit</button>
+        <p class="fine">DIAGALIS utilise ces informations pour vous rappeler et établir votre devis. <a href="confidentialite.html">Politique de confidentialité</a></p>
+      </form>
+      <div class="recap" id="recap" tabindex="-1" hidden>
+        <h2 class="form-title">Votre demande</h2>
+        <dl id="recap-list"></dl>
+        <p class="demo-note"><strong>Démonstration.</strong> Cette demande n'a été transmise à personne. Pour recevoir de vraies demandes, renseignez <code>formEndpoint</code> dans <code>config.js</code>.</p>
+        <button class="btn btn-ghost" type="button" id="edit">Modifier ma demande</button>
+      </div>
+    </section></aside>
+<div class="lp-rest">
+<section class="blk" id="concerne"><h2 class="title">Votre bâtiment est-il concerné ?</h2><p class="sub">Deux questions, une réponse immédiate.</p><div class="qual" id="qualifier" data-yes-t="Oui, un dossier technique amiante est à tenir." data-yes-p="Pour un immeuble collectif (parties communes) ou un local professionnel dont le permis de construire date d'avant le 1er juillet 1997, le propriétaire doit constituer et tenir à jour un DTA. Demandez votre devis pour le constituer ou le mettre à jour." data-later-t="En principe, pas de DTA pour un logement seul." data-later-p="Un autre diagnostic amiante peut toutefois être nécessaire, par exemple avant une vente ou des travaux. Votre conseiller vous oriente vers le bon." data-no-t="En principe, pas d'obligation pour ce bâtiment." data-no-p="L'amiante est interdit en France depuis le 1er janvier 1997. Si le bâtiment comporte d'anciens éléments ou des matériaux de réemploi, votre conseiller peut vérifier votre cas." data-unknown-t="Pas de souci, nous vérifions avec vous." data-unknown-p="La date du permis de construire se retrouve en mairie ou dans l'acte de propriété. Votre conseiller vous aide à la confirmer lors du rappel gratuit."><fieldset><legend class="legend">Le permis de construire du bâtiment date…</legend><div class="seg"><label><input type="radio" name="q1" value="avant"><span>D'avant le 1er juillet 1997</span></label><label><input type="radio" name="q1" value="apres"><span>Du 1er juillet 1997 ou après</span></label><label><input type="radio" name="q1" value="inconnu" checked><span>Je ne sais pas</span></label></div></fieldset><fieldset><legend class="legend">Votre bien est</legend><div class="seg"><label><input type="radio" name="q2" value="oui" checked><span>Un immeuble collectif ou un local professionnel</span></label><label><input type="radio" name="q2" value="non"><span>Une maison ou un logement seul</span></label></div></fieldset><div class="verdict" id="verdict" role="status" aria-live="polite"><strong class="verdict-t">Pas de souci, nous vérifions avec vous.</strong><p class="verdict-p">La date du permis de construire se retrouve en mairie ou dans l'acte de propriété. Votre conseiller vous aide à la confirmer lors du rappel gratuit.</p><a class="btn" href="#devis">Recevoir mon devis gratuit</a></div></div></section>
+<section class="blk"><h2 class="title">Comment votre DTA est constitué</h2><p class="sub">Du repérage à la fiche récapitulative.</p><ol class="steps"><li>Repérage des matériaux susceptibles de contenir de l'amiante, listes A et B</li><li>Prélèvements et analyse en laboratoire accrédité</li><li>Évaluation de l'état de conservation des matériaux repérés</li><li>Constitution du dossier et de sa fiche récapitulative</li></ol><p class="note">Le dossier est à tenir à jour par le propriétaire, ou par le syndic pour une copropriété. Il doit être mis à disposition des occupants, des employeurs et des entreprises qui interviennent dans le bâtiment.</p></section>
+<section class="blk"><h2 class="title">Ce que contient le DTA</h2><p class="sub">Un dossier vivant, complété au fil du temps.</p><ul class="where"><li><b>Repérage des matériaux</b><span>Listes A et B : flocages, calorifugeages, faux plafonds, parois, planchers, conduits, toitures</span></li><li><b>État de conservation</b><span>Évaluation périodique de chaque matériau contenant de l'amiante</span></li><li><b>Fiche récapitulative</b><span>Synthèse à communiquer aux occupants, aux employeurs et aux entreprises</span></li><li><b>Consignes de sécurité</b><span>Recommandations générales et procédures d'intervention</span></li><li><b>Travaux réalisés</b><span>Retraits ou confinements, à consigner dans le dossier</span></li><li><b>Gestion des déchets</b><span>Procédures d'élimination des déchets contenant de l'amiante</span></li></ul><p class="note">L'amiante est invisible à l'œil nu : seule l'analyse en laboratoire permet de le confirmer.</p></section>
+<section class="blk"><h2 class="title">Pourquoi ne pas s'en passer</h2><p class="sub">Un DTA à jour protège les personnes et le propriétaire.</p><div class="risks"><div><h3>Pour les occupants</h3><p>Les fibres d'amiante inhalées peuvent provoquer de graves maladies respiratoires et des cancers, des années après l'exposition. Le dossier permet de surveiller les matériaux.</p></div><div><h3>Pour vos travaux</h3><p>Le dossier doit être remis aux entreprises avant leur intervention. Sans lui, le chantier peut être retardé ou arrêté.</p></div><div><h3>Pour votre responsabilité</h3><p>Le propriétaire doit constituer, tenir à jour et communiquer le dossier. À défaut, il engage sa responsabilité.</p></div></div></section>
+<section class="blk"><h2 class="title">Ce que vous obtenez avec DIAGALIS</h2><ul class="benefits"><li><b>Un devis gratuit en 2 clics</b><span>Remplissez le formulaire, un conseiller vous rappelle.</span></li><li><b>Des experts certifiés</b><span>Le repérage est réalisé par un opérateur certifié.</span></li><li><b>Un dossier prêt à communiquer</b><span>Rapports et fiche récapitulative, pour les occupants et les entreprises.</span></li></ul></section>
+<section class="blk"><h2 class="title">Combien coûte un DTA ?</h2><div class="pricebox"><p>Le prix dépend de la surface, du nombre de bâtiments, de la complexité des locaux et du nombre de prélèvements à analyser. Le devis est gratuit et précise le prix avant toute intervention.</p><a class="btn" href="#devis">Recevoir mon devis gratuit</a></div></section>
+<section class="blk"><h2 class="title">Comment ça se passe</h2><p class="sub">Cinq étapes, de la demande au dossier.</p><ol class="steps vert"><li>Remplissez le formulaire</li><li>Un conseiller vous contacte</li><li>Vous recevez votre devis gratuit</li><li>Un opérateur certifié réalise le repérage</li><li>Vous recevez votre dossier technique amiante</li></ol></section>
+<section class="blk"><h2 class="title">Questions fréquentes</h2><div class="faq"><details><summary>Qu'est-ce que le dossier technique amiante ?</summary><p>C'est le dossier qui rassemble les rapports de repérage de l'amiante d'un bâtiment, l'évaluation de l'état de conservation des matériaux, les consignes de sécurité, les travaux réalisés et une fiche récapitulative. Il est tenu à jour par le propriétaire.</p></details><details><summary>Qui doit avoir un DTA ?</summary><p>Les propriétaires d'immeubles bâtis dont le permis de construire date d'avant le 1er juillet 1997 : parties communes des immeubles collectifs d'habitation, bureaux, locaux commerciaux, bâtiments industriels ou agricoles. En principe pas les maisons individuelles.</p></details><details><summary>Qui doit le constituer dans une copropriété ?</summary><p>Le propriétaire des parties communes, c'est-à-dire le syndicat de copropriétaires, qui agit par l'intermédiaire du syndic. Le repérage est confié à un opérateur certifié.</p></details><details><summary>À qui faut-il le communiquer ?</summary><p>Aux occupants, aux employeurs et à leurs représentants s'il y a des locaux de travail, et aux entreprises qui interviennent dans le bâtiment. Le propriétaire doit pouvoir justifier de cette communication.</p></details><details><summary>Quelle différence avec le diagnostic amiante d'une vente ?</summary><p>Le diagnostic de vente est un rapport remis à l'acquéreur. Le DTA est un dossier permanent du bâtiment, complété et mis à jour au fil des évaluations et des travaux.</p></details><details><summary>Quel est le délai pour recevoir le dossier ?</summary><p>Il dépend de la taille du bâtiment et des analyses en laboratoire. Le délai est annoncé dans votre devis gratuit.</p></details></div></section>
+</div>
+</div>
+</main>
+<div class="ctaband"><div class="wrap cta-in"><div><h2>Mettez votre DTA en règle</h2><p>Devis gratuit, sans engagement. Un conseiller vous rappelle. Appel gratuit, <span data-site="horaires">Lun-Ven 9h-19h, Sam 9h-12h</span>.</p></div><div class="cta-btns"><a class="btn" href="#devis">Demander mon devis gratuit</a><a class="btn btn-ghost" href="tel:+33179727010" data-tel-href>&#9742;&nbsp;<span data-site="tel">01 79 72 70 10</span></a></div></div></div>
+<footer class="footer"><div class="wrap foot"><address><strong>DIAGALIS</strong><span data-site="horaires">Lun-Ven 9h-19h, Sam 9h-12h</span><a class="" href="tel:+33179727010" data-tel-href><span data-site="tel">01 79 72 70 10</span></a></address><ul><li><a href="mentions-legales.html">Mentions légales</a></li><li><a href="confidentialite.html">Politique de confidentialité</a></li><li><button class="linklike" type="button" data-cookie-settings hidden>Gérer les cookies</button></li><li><a href="https://www.diagalis.fr/">Site DIAGALIS</a></li></ul></div></footer>
+<div class="callbar"><a class="btn btn-ghost" href="tel:+33179727010" data-tel-href>&#9742;&nbsp;<span data-site="tel">01 79 72 70 10</span></a><a class="btn" href="#devis">Devis gratuit</a></div>
+<div class="consent" id="consent" role="dialog" aria-labelledby="consent-t" hidden>
+  <div class="consent-in">
+    <p id="consent-t">Nous utilisons des cookies de mesure publicitaire (Google Ads) pour évaluer l'efficacité de nos annonces. Vous pouvez les accepter ou les refuser. <a href="confidentialite.html">En savoir plus</a></p>
+    <div class="consent-btns"><button class="btn" type="button" id="consent-refuse">Refuser</button><button class="btn accept" type="button" id="consent-accept">Accepter</button></div>
+  </div>
+</div>
+<script src="config.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
