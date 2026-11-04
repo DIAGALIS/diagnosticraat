@@ -27,7 +27,7 @@ window.SITE = {
   // GOOGLE ADS (laisser vide tant que le suivi n'est pas prévu)
   gtagId: "AW-11467076247",                 // identifiant de la balise Google, par exemple "AW-123456789"
   conversionLabel: "Fqt6CIG5_LAdEJfl9tsq",        // libellé de la conversion « formulaire envoyé », par exemple "AbCdEfGhIj"
-  callLabel: "",              // libellé de la conversion « clic sur le téléphone » (facultatif)
+  callLabel: "-r2CCIfujbIdEJfl9tsq",              // libellé de la conversion « clic sur le téléphone » (facultatif)
   chargerAvantConsentement: false, // false = rien n'est chargé tant que le visiteur n'a pas accepté
 
   // MENTIONS LÉGALES ET CONFIDENTIALITÉ : à compléter
