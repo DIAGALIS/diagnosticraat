@@ -1,0 +1,10 @@
+# Les pages sont réservées aux annonces Google Ads (balise noindex dans chaque page).
+# Tous les robots, dont AdsBot-Google qui contrôle les pages de destination, peuvent les lire.
+User-agent: *
+Disallow:
+
+User-agent: AdsBot-Google
+Allow: /
+
+User-agent: AdsBot-Google-Mobile
+Allow: /
