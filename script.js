@@ -109,6 +109,8 @@
       theme: document.body.getAttribute('data-lp') || '',
       page: location.pathname
     };
+    p._subject = 'Demande devis amiante avant travaux : ' + p.nom + ', ' + p.ville;
+    p.message = p.profil + ' : demande de devis pour un repérage amiante avant travaux (' + p.projet + ', ' + p.bien + ') à ' + p.ville + '. Contact : ' + p.nom + ', ' + p.telephone + '.';
     var q = new URLSearchParams(location.search);
     ['gclid', 'gbraid', 'wbraid', 'utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content'].forEach(function (k) {
       if (q.get(k)) p[k] = q.get(k);
@@ -135,8 +137,9 @@
     e.preventDefault();
     if (!form.checkValidity()) { form.reportValidity(); return; }
     err.hidden = true;
-    if ($('website').value) { location.href = 'merci.html'; return; }  // champ piège rempli : robot
     var p = collect();
+    // champ piège : si le navigateur l'a rempli (saisie automatique), on envoie quand même la demande en la signalant
+    if ($('website').value) { p.piege = $('website').value; }
     if (!S.formEndpoint) { showRecap(p); return; }
     var btn = form.querySelector('button[type="submit"]');
     btn.disabled = true;
