@@ -23,7 +23,11 @@
 .hero-top h1{flex:1 1 auto;min-width:0}
 .picto-big{display:none;flex:none;width:clamp(96px,10vw,128px);height:auto;align-self:center}
 @media (min-width:700px){.picto-big{display:block}.hero-text .picto-small{display:none}}
-@media (max-width:699px){.hero-text .eyebrow{flex-direction:column;gap:8px;text-align:center;justify-content:center}.hero-text h1{text-align:center;text-wrap:balance}.band-photo{min-height:360px;background-position:68% 18%}}
+@media (max-width:699px){.hero-band{padding-block:14px 24px}.hero-band .wrap{gap:14px}.hero-text{gap:10px}.hero-text .eyebrow{display:none}.hero-top{justify-content:center}.picto-big{display:none}.picto-inline{display:inline-block;width:1.15em;height:auto;vertical-align:-.22em;margin-right:.35em}.hero-top h1{flex:1 1 auto;text-align:center;font-size:clamp(1rem,5.3vw,1.5rem);line-height:1.2}.hero-text .lede{font-size:.98rem;line-height:1.45;text-align:center;text-wrap:balance}.hero-text .checks{gap:6px;font-size:.9rem}.lp-wide .title,.lp-wide .sub{text-align:center;text-wrap:balance;margin-inline:auto}.band-photo{min-height:340px;background-position:68% 18%}}
+.hero-text .lede strong{color:var(--ink)}
+@media (min-width:700px){.picto-inline{display:none}}
+.mbr{display:none}
+@media (max-width:699px){.mbr{display:inline}}
 .band{display:flex;flex-wrap:wrap;border-radius:18px;overflow:hidden;box-shadow:0 20px 40px -24px rgba(0,0,0,.55);min-width:0}
 .band-photo{flex:1 1 420px;min-width:0;min-height:280px;background:linear-gradient(180deg,rgba(15,44,34,0) 65%,rgba(15,44,34,.3)),url(operateur-amiante.webp) 82% 30%/cover no-repeat #24533f}
 .band .lp-form{flex:0 1 460px;min-width:0;position:static;max-height:none;overflow:visible;padding:0;grid-area:auto}
@@ -50,8 +54,8 @@
 <div class="wrap">
 <div class="hero-text">
       <p class="eyebrow"><img class="picto picto-small" src="pictogramme-amiante.png" width="160" height="157" alt="" aria-hidden="true"><span>Diagnostic amiante</span></p>
-      <div class="hero-top"><h1>Diagnostic amiante : <span class="hl">le bon diagnostic pour votre projet.</span></h1><img class="picto-big" src="pictogramme-amiante.png" width="160" height="157" alt="" aria-hidden="true"></div>
-      <p class="lede">Vente, location, travaux, démolition ou immeuble : le diagnostic amiante dépend de votre situation. Un opérateur certifié repère l'amiante dans les bâtiments dont le permis de construire date d'avant le 1er juillet 1997.</p>
+      <div class="hero-top"><h1><img class="picto-inline" src="pictogramme-amiante.png" width="160" height="157" alt="" aria-hidden="true">Diagnostic&nbsp;amiante&nbsp;:<br class="mbr"> <span class="hl">le bon diagnostic pour votre projet.</span></h1><img class="picto-big" src="pictogramme-amiante.png" width="160" height="157" alt="" aria-hidden="true"></div>
+      <p class="lede"><strong>Vente, location, travaux, démolition ou immeuble</strong> : le diagnostic amiante dépend de votre situation. Un opérateur certifié repère l'amiante dans les bâtiments dont le permis de construire date d'avant le 1er juillet 1997.</p>
       <p class="promo" data-if="promo"><span data-site="promo"></span></p>
       <ul class="checks"><li><span>Un conseiller vous rappelle sous 2 h, devis gratuit</span></li><li><span>Votre conseiller vous oriente vers le diagnostic adapté</span></li><li><span>Pour les particuliers et les professionnels</span></li></ul>
       
