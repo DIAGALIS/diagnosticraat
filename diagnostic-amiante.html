@@ -16,9 +16,14 @@
 .hero-band .wrap{display:grid;gap:28px;min-width:0}
 .hero-text{display:grid;gap:18px;min-width:0}
 .hero-text .eyebrow{display:flex;align-items:center;gap:12px}
-.hero-text h1{font-size:clamp(1.9rem,5.4vw,3.6rem);line-height:1.04;margin:0}
+.hero-text h1{color:var(--ink);font-size:clamp(1.9rem,5.4vw,3.6rem);line-height:1.04;margin:0}
 .hero-text .lede{max-width:none;font-size:1.25rem}
 .hero-text .checks{max-width:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:12px 32px}
+.hero-top{display:flex;align-items:center;justify-content:space-between;gap:32px}
+.hero-top h1{flex:1 1 auto;min-width:0}
+.picto-big{display:none;flex:none;width:clamp(96px,10vw,128px);height:auto;align-self:center}
+@media (min-width:700px){.picto-big{display:block}.hero-text .picto-small{display:none}}
+@media (max-width:699px){.hero-text .eyebrow{flex-direction:column;gap:8px;text-align:center;justify-content:center}.hero-text h1{text-align:center;text-wrap:balance}.band-photo{min-height:360px;background-position:68% 18%}}
 .band{display:flex;flex-wrap:wrap;border-radius:18px;overflow:hidden;box-shadow:0 20px 40px -24px rgba(0,0,0,.55);min-width:0}
 .band-photo{flex:1 1 420px;min-width:0;min-height:280px;background:linear-gradient(180deg,rgba(15,44,34,0) 65%,rgba(15,44,34,.3)),url(operateur-amiante.webp) 82% 30%/cover no-repeat #24533f}
 .band .lp-form{flex:0 1 460px;min-width:0;position:static;max-height:none;overflow:visible;padding:0;grid-area:auto}
@@ -27,6 +32,13 @@
 @media (max-width:480px){.band .formcard{padding:20px 16px}.band .seg span{padding-inline:8px;font-size:.95rem}}
 .hero-band .proofs{justify-content:space-between;margin-top:0}
 @media (max-width:480px){.top{flex-wrap:nowrap;gap:8px}.logo-img{height:36px}.callbox .btn{padding:8px 12px;min-height:44px;font-size:.9rem;white-space:nowrap;gap:6px}}
+.lp-wide .where{grid-template-columns:minmax(0,1fr);gap:16px}
+@media (min-width:560px){.lp-wide .where{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (min-width:900px){.lp-wide .where{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.lp-wide .where li{padding:20px;gap:6px}
+.lp-wide .where b{color:var(--leaf-text)}
+/* Tous les titres en vert (sauf ceux sur fond vert : formulaire et bandeau final) */
+.hero-text h1 .hl,.lp-wide .title,.lp-wide h3,.lp-wide .benefits b,.lp-wide .verdict-t,.lp-wide .where b,.lp-wide .steps b{color:var(--leaf-text)}
 .lp-wide{display:grid;gap:60px;padding-block:56px 72px;min-width:0}
 .lp-wide .lp-rest{grid-area:auto}
 </style>
@@ -37,8 +49,8 @@
 <section class="hero-band">
 <div class="wrap">
 <div class="hero-text">
-      <p class="eyebrow"><img class="picto" src="pictogramme-amiante.png" width="160" height="157" alt="" aria-hidden="true"><span>Diagnostic amiante</span></p>
-      <h1>Diagnostic amiante : <span class="hl">le bon diagnostic pour votre projet.</span></h1>
+      <p class="eyebrow"><img class="picto picto-small" src="pictogramme-amiante.png" width="160" height="157" alt="" aria-hidden="true"><span>Diagnostic amiante</span></p>
+      <div class="hero-top"><h1>Diagnostic amiante : <span class="hl">le bon diagnostic pour votre projet.</span></h1><img class="picto-big" src="pictogramme-amiante.png" width="160" height="157" alt="" aria-hidden="true"></div>
       <p class="lede">Vente, location, travaux, démolition ou immeuble : le diagnostic amiante dépend de votre situation. Un opérateur certifié repère l'amiante dans les bâtiments dont le permis de construire date d'avant le 1er juillet 1997.</p>
       <p class="promo" data-if="promo"><span data-site="promo"></span></p>
       <ul class="checks"><li><span>Un conseiller vous rappelle sous 2 h, devis gratuit</span></li><li><span>Votre conseiller vous oriente vers le diagnostic adapté</span></li><li><span>Pour les particuliers et les professionnels</span></li></ul>
@@ -106,5 +118,9 @@
 </div>
 <script src="config.js"></script>
 <script src="script.js"></script>
+<script>
+/* Masque la barre d'appel fixe quand le formulaire est visible : elle ne cache plus la photo */
+(function(){try{var bar=document.querySelector('.callbar'),band=document.querySelector('.band');if(!bar||!band||!('IntersectionObserver' in window))return;new IntersectionObserver(function(e){bar.style.display=e[0].isIntersecting?'none':'';},{threshold:0.05}).observe(band);}catch(_){}})();
+</script>
 </body>
 </html>
